@@ -2,7 +2,12 @@
 <html>
   <%= render "shared/head" %>
   <body>
-    <%= yield %>
-    <%= render 'shared/footer' %>
+    <div id="wrapper">
+      <%= render 'shared/sidebar' %>
+      <%= render 'shared/header' %>
+      <%= yield %>
+      <%= render 'shared/footer' %>
+    </div>
+    <%= render 'shared/scripts' %>
   </body>
 </html>
